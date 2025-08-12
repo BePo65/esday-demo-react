@@ -1,33 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import esdayLogo from './assets/esday.png';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+function App({now, futureDate}) {
+  const defaultFutureDate = '??'
+  const [future, setFutureDate] = useState(defaultFutureDate);
+
+  const setDate = () => { setFutureDate(futureDate) }
+  const resetDate = () => { setFutureDate(defaultFutureDate) }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <header>
+        <img class="header-symbol" src={esdayLogo} alt="ESday project icon" />
+        <h1 class="header-title">Demo for using the ESday-Library in a basic React app</h1>
+      </header>
+      <main>
+        <p>The <a href="https://github.com/g-mero/esday">ESday library</a> is a direct replacement of <a href="https://momentjs.com/" target="_blank">Moment.js</a> and <a href="https://day.js.org/" target="_blank">dayjs</a> written in typescript as ESModule.</p>
+        <p>This demo shows how to use the ESday library in a simple html web page.</p>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          <button onClick={setDate} class="button-set">Set future date</button>
+          <button onClick={resetDate} class="button-reset">Reset future date</button>
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <p>
+          <span class="date-now-label">Now it is</span>
+          <span id="date-now">{ now }</span>
+        </p>
+        <p>
+          <span class="date-then-label">in 5 days it will be</span>
+          <span id="date-then">{ future }</span>
+        </p>
+      </main>
+      <p class="footer">ESday-version 0.5.0</p>
     </>
   )
 }
