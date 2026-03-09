@@ -14,7 +14,7 @@ header {
   grid-template-columns: 100px 1rem 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: 'symbol . title';
+  grid-template-areas: "symbol . title";
   margin: 1rem 0;
   padding: 0 0.5rem 0 0;
 }

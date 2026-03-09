@@ -29,7 +29,8 @@
     "start": "vite --open --port 3000",
     "build": "vite build",
     "build:ghpages": "vite build --base=/esday-demo-react/ && del-cli ghpages && cpy \"dist/**\" ghpages && cpy README.md ghpages  && cpy LICENSE ghpages",
-    "lint": "eslint .",
+    "lint": "npm exec biome check .",
+    "lint:fix": "npm exec biome check --write .",
     "preview": "vite preview --open"
   },
   "dependencies": {
@@ -38,15 +39,12 @@
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.4",
+    "@biomejs/biome": "^2.4.6",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.4",
     "cpy-cli": "^7.0.0",
     "del-cli": "^7.0.0",
-    "eslint": "^9.39.4",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
     "vite": "^7.3.1"
   }
