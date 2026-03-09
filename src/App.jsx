@@ -2,12 +2,12 @@ import { useState } from 'react';
 import esdayLogo from './assets/esday.png';
 import './App.css';
 
-function App({now, futureDate}) {
-  const defaultFutureDate = '??'
+function App({ now, futureDate }) {
+  const defaultFutureDate = '??';
   const [future, setFutureDate] = useState(defaultFutureDate);
 
-  const setDate = () => { setFutureDate(futureDate) }
-  const resetDate = () => { setFutureDate(defaultFutureDate) }
+  const setDate = () => { setFutureDate(futureDate); };
+  const resetDate = () => { setFutureDate(defaultFutureDate); };
 
   return (
     <>
@@ -24,16 +24,16 @@ function App({now, futureDate}) {
         </p>
         <p>
           <span class="date-now-label">Now it is</span>
-          <span id="date-now">{ now }</span>
+          <span id="date-now">{now}</span>
         </p>
         <p>
           <span class="date-then-label">in 5 days it will be</span>
-          <span id="date-then">{ future }</span>
+          <span id="date-then">{future}</span>
         </p>
       </main>
-      <p class="footer">ESday-version 0.5.0</p>
+      <p class="footer">eSday@0.6.3 with React v19</p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
