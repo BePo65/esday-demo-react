@@ -33,7 +33,7 @@ function App({ now, futureDate }) {
         </p>
         <p>This demo shows how to use the ESday library in a simple html web page.</p>
         <p>
-          The source code can be found in
+          The source code can be found in{' '}
           <a href="https://github.com/BePo65/esday-demo-react">GitHub</a>.
         </p>
         <p>
