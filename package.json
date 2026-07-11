@@ -1,6 +1,6 @@
 {
   "name": "esday-demo-react",
-  "version": "0.6.3",
+  "version": "1.0.0",
   "description": "Minimal demo for using the esday library in a basic React app",
   "repository": {
     "type": "git",
@@ -34,18 +34,18 @@
     "preview": "vite preview --open"
   },
   "dependencies": {
-    "esday": "^0.6.3",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "esday": "^1.0.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.13",
-    "@types/react": "^19.2.14",
+    "@biomejs/biome": "^2.5.2",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
+    "@vitejs/plugin-react": "^6.0.3",
     "cpy-cli": "^7.0.0",
     "del-cli": "^7.0.0",
-    "globals": "^17.5.0",
-    "vite": "^8.0.10"
+    "globals": "^17.7.0",
+    "vite": "^8.1.3"
   }
 }
