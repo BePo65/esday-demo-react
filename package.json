@@ -34,7 +34,7 @@
     "preview": "vite preview --open"
   },
   "dependencies": {
-    "esday": "^1.0.0",
+    "esday": "^1.1.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
