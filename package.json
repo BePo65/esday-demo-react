@@ -34,18 +34,18 @@
     "preview": "vite preview --open"
   },
   "dependencies": {
-    "esday": "^1.0.0",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "esday": "^1.1.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.2",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.3",
+    "@biomejs/biome": "^2.5.11",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "@vitejs/plugin-react": "^6.1.1",
     "cpy-cli": "^7.0.0",
     "del-cli": "^7.0.0",
-    "globals": "^17.7.0",
-    "vite": "^8.1.3"
+    "globals": "^17.12.0",
+    "vite": "^8.2.2"
   }
 }
